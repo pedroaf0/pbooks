@@ -66,6 +66,7 @@ const search = async function () {
       toggleElementVisibility('wrapper-load', true);
       const response = await request(query);
       handleSearch(response);
+      setquerylink(query)
     }
   }
 };
